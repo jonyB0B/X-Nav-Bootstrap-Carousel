@@ -5,6 +5,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+
 }
 
 
@@ -43,14 +44,20 @@ body {
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
+
+
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
   background-color: #777;
+}
+
+.carousel .login{
+	margin-left:29%;
+	margin-bottom:10%;
+	position: center;
+	width:300px;
 }
 .carousel-inner > .item > img {
   position: absolute;

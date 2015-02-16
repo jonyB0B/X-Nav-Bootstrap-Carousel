@@ -12,13 +12,187 @@
     <link rel="stylesheet" href="css/carousel.css">
   </head>
   <body>
-    <h1>Esto es un ejercicio para hacer una página para la ETSIT URJC con componentes de Boostrap.</h1>
+ <div class="navbar-wrapper">
+      <div class="container">
 
-    <p>La página web ha de usar al menos:</p>
-    <ul>
-      <li>Un <i>carousel</i> (con su barra de navegación)</li>
-      <li>Al menos dos componentes más de Boostrap (a elección del alumno)</<li>
-      <li>Al menos un componente de <a href="http://www.bootsnipp.com">Bootsnipp</a></li>
+          
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+				<img src="images/imagenCabecera.jpg">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+				
+              <a class="navbar-brand" href="#">Urjc.es</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#about">Alumnos</a></li>
+                <li><a href="#contact">Campus Virtual</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Grados <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Telecomunicaciones</a></li>
+                    <li><a href="#">Turismo</a></li>
+                    <li><a href="#">ADE</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          
+          <div class="container">
+            <div class="carousel-caption">
+              	<div align = center class="login">
+      				<form class="form-signin">
+        			<h2 class="form-signin-heading">Inicia sesion</h2>
+			        <label for="inputEmail" class="sr-only">Email</label>
+        			<input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+       			 <label for="inputPassword" class="sr-only">Contraseña</label>
+       				 <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+       				 <div class="checkbox">
+       			  <label>
+        	    <input type="checkbox" value="remember-me"> Recordarme luego 
+        		  </label>
+        		</div>
+        		<button class="btn btn-lg btn-primary btn-block" type="submit">Logearme</button>
+      	</form>
+			</div> <!-- login -->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/aularioII-edificio.JPG" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Aularios</h1>
+              <p>Conoce nuestros alarios y laboratorios.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Saber mas</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/deporte-estadio.JPG" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Deportes y Cursos</h1>
+              <p>Accede al gimnasio , tambien existen pistas de fútbol , baloncesto o pádel , además de una pista de atletismo</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Mirar fotos y precios</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div><!-- /.carousel -->
+
+      <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Másteres de la Urjc</h2>
+          <p>Consulta todos nuestros Másteres Universitarios. </p>
+          <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Titulación y Cursos</h2>
+          <p>Consulta todos nuestros Títulos Propios y Cursos de Formación Continua. </p>
+          <p><a class="btn btn-default" href="#" role="button">Ver más &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2 class="page-header">Opiniones</h2>
+        <section class="comment-list">
+          <!-- First Comment -->
+          <article class="row">
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <figure class="thumbnail">
+                <img class="img-responsive" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" />
+                <figcaption class="text-center">Grex</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-10 col-sm-10">
+              <div class="panel panel-default arrow left">
+                <div class="panel-body">
+                  <header class="text-left">
+                    <div class="comment-user"><i class="fa fa-user"></i>Gregorio</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Mandanos tu opinion cuando conozcas la universidad.
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Second Comment Reply -->
+          <article class="row">
+            <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-0 hidden-xs">
+              <figure class="thumbnail">
+                <img class="img-responsive" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" />
+                <figcaption class="text-center">Lcc</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-9 col-sm-9">
+              <div class="panel panel-default arrow left">
+                <div class="panel-heading right">Reply</div>
+                <div class="panel-body">
+                  <header class="text-left">
+                    <div class="comment-user"><i class="fa fa-user"></i> Luis</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Debería de añadirse una titulación en horario de tarde en las ingenierias.
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+    </div>
+  </div>
+</div>
     </ul>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
